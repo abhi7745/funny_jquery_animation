@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Coco</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+		<!-- <img style="position: absolute;" src="coco3.png" width="550px"><br> -->
+		<!-- <img src="karikku2.png" width="60px"> -->
+<h1 style="position: absolute;color: green;font-size: 60px;top: 190px;left: 60px;z-index: -1;">
+	Thengayil Aaru <br>Vellam Nirakkum..<br>Daivam Und..<br>Feel The Freshness</h1>
+<img style="position: absolute;margin-left: 400px;z-index: -1" src="coco3.png" width="600px;" >
+<img style="margin-left: 670px;margin-top: 300px;position: absolute;" class="kk" src="karikku2.png" width="60px;">
+</div>
+<button style="position: absolute;margin-top: 350px;margin-left: 800px;" class="btn btn-success" id="btn1">Put One</button>
+<!-- <button style="margin-top: 400px;margin-left: 800px;" class="btn btn-success" id="btn2">Put two</button> -->
+<script>
+	$(document).ready(function(){
+ 		$("#btn1").click(function(){
+    	$(".kk").animate({top: '230px'});
+    	setTimeout(function(){window.location.reload(true);}, 1000);
+    	
+    	
+  });
+});
+	$(document).ready(function(){
+ 		$("#btn2").click(function(){
+ 			for(var i=1;i<=2;i++){
+ 				$(".kk").animate({top: '230px'});
+ 				$(".kk").animate({top: '0px'}); 
+ 				console.log(i);
+    			setTimeout(function(){
+    				// $(".kk").hide();
+    				// window.location.reload(true);
+    				// $(".kk").animate({top: '0px'});
+    				console.log(i);
+    			}, 1000);
+    			// alert("dsghf");
+
+    			 
+ 			}
+    	
+    	
+    	
+  });
+});
+</script>
+</body>
+</html>
